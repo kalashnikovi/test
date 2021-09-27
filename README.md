@@ -18,7 +18,7 @@ commit test
 1. Get cart
   - **URL:** ${CART_URL}
   - **Method:** GET
-2. Add product to cart
+2. Add/replace product to/in cart
   - **URL:** ${CART_URL}/add
   - **Method:** POST
   - **Content-Type:** application/json
@@ -31,5 +31,51 @@ commit test
   - **URL:** ${CART_URL}
   - **Method:** DELETE
   - **Parameter:** product - product identifier (Long)
+
+### Product 
+
+**PRODUCT_URL**: ${JAXRS_URL}/product
+
+1. Get product by identifier
+  - **URL:** ${PRODUCT_URL}/<product-identifier>
+  - **Method:** GET
+2. Get product list (all or by categories)
+  - **URL:** ${PRODUCT_URL}/list
+  - **Method:** GET
+  - **Content-Type:** application/x-www-form-urlencoded
+  - **Parameters:** category(optional,multiple) - category identifier
+
+### Category
+
+**CATEGORY_URL**: ${JAXRS_URL}/category
+
+1. Get category by identifier
+  - **URL:** ${CATEGORY_URL}/<category-identifier>
+  - **Method:** GET
+2. Get categories list
+  - **URL:** ${CATEGORY_URL}/list
+  - **Method:** GET
+
+### Currency
+
+**CURRENCY_URL**: ${JAXRS_URL}/currency
+
+1. Get currency by identifier
+  - **URL:** ${CURRENCY_URL}/<currency-identifier>
+  - **Method:** GET
+2. Get currency list
+  - **URL:** ${CURRENCY_URL}/list
+  - **Method:** GET
+
+### Country
+
+**COUNTRY_URL**: ${JAXRS_URL}/country
+
+1. Get country by identifier
+  - **URL:** ${COUNTRY_URL}/<country-identifier>
+  - **Method:** GET
+2. Get country list
+  - **URL:** ${COUNTRY_URL}/list
+  - **Method:** GET
 
 
