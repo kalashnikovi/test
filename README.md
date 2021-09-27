@@ -14,7 +14,6 @@ commit test
 **Response:**
 
     Content-Type: application/json
-
         {
           "status": 0(OK) | 1(ERROR),
           "count": number >= 0 (count of records in field "data"),
