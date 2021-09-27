@@ -16,7 +16,7 @@ JAXRS_URL = http[s]://host[:port]/context-name
 CART_URL: ${JAXRS_URL}/card
 
 1. Get cart
-  Method: GET
+  - Method: GET
 2. Add product to cart
   - URL: ${CART_URL}/add
   - Method: POST
