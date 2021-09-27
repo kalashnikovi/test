@@ -14,12 +14,12 @@ commit test
 **Response:**
 
     Content-Type: application/json
-        {
-          "status": 0(OK) | 1(ERROR),
-          "count": number >= 0 (count of records in field "data"),
-          "data": null | JSON-object | JSON-array,
-          "message": null | error message if status equals 1
-        }
+    {
+      "status": 0(OK) | 1(ERROR),
+      "count": number >= 0 (count of records in field "data"),
+      "data": null | JSON-object | JSON-array,
+      "message": null | error message if status equals 1
+    }
 
 ### Cart
 
