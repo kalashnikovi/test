@@ -13,17 +13,17 @@ commit test
 
 **Response:**
 
-    Content-Type: application/json
+Content-Type: application/json
     {
       "status": 0(OK) | 1(ERROR),
       "count": number >= 0 (count of records in field "data"),
       "data": null | JSON-object | JSON-array,
       "message": null | error message if status equals 1
     }
-    where:
-    * count: depends of business logic. Can be:
-        * count of records in field "data"
-        * count of deleted/updated records in database
+where:
+- count: depends of business logic. Can be:
+  - count of records in field "data"
+  - count of deleted/updated records in database
 
 ### Cart
 
