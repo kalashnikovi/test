@@ -17,7 +17,7 @@ Content-Type: application/json
 
     {
       "status": 0(OK) | 1(ERROR),
-      "count": number >= 0 (count of records in field "data"),
+      "count": number >= 0,
       "data": null | JSON-object | JSON-array,
       "message": null | error message if status equals 1
     }
@@ -25,6 +25,13 @@ where:
 - count: depends of business logic. Can be:
   - count of records in field "data"
   - count of deleted/updated records in database
+- data: result of operation. Can be:
+  - null
+  - object
+  - array
+- message: error message. Can be:
+  - null - if "status" equals 0(OK)
+  - error message - if "status" equals 1(ERROR)
 
 ### Cart
 
