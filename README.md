@@ -11,6 +11,15 @@ commit test
 
 **JAXRS_URL** = http[s]://host[:port]/context-name
 
+**Response:**
+    Content-Type: application/json
+        {
+          "status": 0(OK) | 1(ERROR),
+          "count": number >= 0 (count of records in field "data"),
+          "data": null | JSON-object | JSON-array,
+          "message": null | error message if status equals 1
+        }
+
 ### Cart
 
 **CART_URL**: ${JAXRS_URL}/card
