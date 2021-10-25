@@ -10,7 +10,7 @@ commit test
 ### 2021-10-07
 
 1. Stop Tomcat.
-2.
+2. Database changes:
     **IMPORTANT:**
         Run **ONLY** if the SSO-app is working on a dedicated database.
 
