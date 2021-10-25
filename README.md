@@ -10,9 +10,10 @@ commit test
 ### 2021-10-07
 
 1. Stop Tomcat.
-2.
+2. _
     >
-    > **IMPORTANT:** Run **ONLY** if the SSO-app is working on a dedicated database.
+    > **IMPORTANT:**
+    >  Run **ONLY** if the SSO-app is working on a dedicated database.
     >
 
     Run SQL-script ${SSO_SERVICE_PROJECT}/sql/currency-country.sql
