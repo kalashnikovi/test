@@ -12,9 +12,9 @@ commit test
 1. Stop Tomcat.
 2. **IMPORTANT:**
 
-  Run **ONLY** if the SSO-app is working on a dedicated database.
+    Run **ONLY** if the SSO-app is working on a dedicated database.
 
-  Run SQL-script ${SSO_SERVICE_PROJECT}/sql/currency-country.sql
+    Run SQL-script ${SSO_SERVICE_PROJECT}/sql/currency-country.sql
   - Tables **country** and **currency** will be renamed to **country_old** and **currency_old**.
   - Will be created new tables  **country** and **currency** with data.
 3. Deploy application to Tomcat.
